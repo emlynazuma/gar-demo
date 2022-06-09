@@ -1,14 +1,13 @@
-name := "hello-world"
+organization := "com.mycompany.app"
 
-// Avoid the default behavior which replace dots with hyphens
-moduleName := name.value
+moduleName := "my-app"
 
-version := "1.1.2-SNAPSHOT"
-
-organization := "com.appier"
+version := "1.1.1-SNAPSHOT"
 
 scalaVersion := "2.11.8"
 
 publishMavenStyle := true
+
+crossPaths := false
 
 publishTo := Some("snapshots" at "{modify me}")
